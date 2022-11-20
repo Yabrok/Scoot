@@ -1,0 +1,127 @@
+.intro {
+    padding: 160px 0 200px;
+    background-image: url('../../images/intro-line.svg');
+    background-repeat: no-repeat;
+    background-position: calc(50% - 220px) calc(50% - 116px);
+}
+
+.intro__list {
+    @include unlist;
+    display: flex;
+    justify-content: space-between;
+}
+
+.introitem {
+    width: 100%;
+    max-width: 350px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 96px;
+        height: 96px;
+        background-image: url('../../icons/intro-icon.svg');
+        background-repeat: no-repeat;
+        margin: 0 0 40px;
+    }
+
+    &:nth-child(2)::before {
+        background-image: url('../../icons/intro-icon2.svg');
+    }
+
+    &:nth-child(3)::before {
+        background-image: url('../../icons/intro-icon3.svg');
+    }
+}
+
+.introitem__title {
+    margin: 0 0 27px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+
+.introitem__text {
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+
+@media only screen and(max-width:786px) {
+    .intro {
+        padding: 122px 0 145px;
+        background-image: url('../../images/intro-line_tablet.svg');
+        background-position: calc(50% - 237px) top;
+    }
+
+    .intro__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introitem {
+        max-width: 573px;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            margin: 0 79px 0 0;
+        }
+
+        &:not(:last-child) {
+            margin: 0 0 40px;
+        }
+    }
+
+    .introitem__box {
+        width: 100%;
+        max-width: 398px;
+    }
+
+    .introitem__title {
+        margin: 0 0 27px;
+    }
+}
+
+@media only screen and(max-width:576px) {
+    .intro {
+        padding: 120px 0 120px;
+    }
+
+    .introitem {
+        flex-direction: column;
+
+        &::before {
+            margin: 0 0 24px;
+        }
+
+        &:not(:last-child) {
+            margin: 0 0 48px;
+        }
+    }
+
+    .introitem__box {
+        max-width: 311px;
+    }
+
+    .introitem__title {
+        margin: 0 0 24px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+
+    .introitem__text {
+        text-align: center;
+    }
+
+}
