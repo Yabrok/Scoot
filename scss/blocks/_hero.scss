@@ -1,0 +1,47 @@
+.hero {
+    padding: 153px 0 152px;
+    background-image: 
+    url('../../images/hero-line2.svg'), 
+    url('../../images/hero-line.svg'),
+    url('../../images/hero-circle.svg'),
+    url('../../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 
+    calc(50% - -220px) calc(50% + 99px),
+    calc(50% - 628px) calc(50% - -30px), 
+    calc(50% + 620px) calc(50% + 130px),
+    center center;
+}
+
+.hero__inner {
+    background-image: url('');
+}
+
+.hero__content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero__title {
+    margin: 0 0 40px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFF;
+}
+
+.textbox-hero {
+    margin-left: auto;
+    width: 100%;
+    max-width: 405px;
+}
+
+.hero__text {
+    margin: 0 0 40px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFF;
+}
