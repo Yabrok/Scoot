@@ -613,6 +613,7 @@ img {
 @media only screen and (max-width: 576px) {
   .intro {
     padding: 120px 0 120px;
+    background-image: none;
   }
   .introitem {
     flex-direction: column;
@@ -638,4 +639,127 @@ img {
   .introitem__text {
     text-align: center;
   }
+}
+.services {
+  padding: 0 0 370px;
+  background-image: url("../../images/services-bg.png"), url("../../images/services-bg2.png"), url("../../images/services-bg3.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 450px) top, calc(50% - 550px) calc(50% - 130px), calc(50% + 530px) calc(50% + 450px);
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.seritem {
+  display: flex;
+  justify-content: flex-start;
+}
+.seritem:nth-child(2) {
+  justify-content: flex-end;
+}
+.seritem:not(:last-child) {
+  margin: 0 0 226px;
+}
+
+.seritem__content {
+  padding: 66px 0 0;
+  width: 100%;
+  max-width: 445px;
+}
+
+.seritem__title {
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.seritem__text {
+  margin: 0 0 40px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.mainbtn-services {
+  padding: 14px 43px;
+}
+
+.site-article {
+  padding: 102px 0;
+  background-color: #495567;
+  background-image: url("../../images/article-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-article__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textbox-article {
+  width: 100%;
+  max-width: 415px;
+}
+
+.site-article__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFF;
+}
+
+.btnbox {
+  display: flex;
+}
+
+.btnbox__link {
+  display: inline-block;
+  text-decoration: none;
+}
+.btnbox__link:first-child {
+  margin-right: 18px;
+}
+
+.site-footer {
+  padding: 35px 0;
+  background-color: #333A44;
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.socials__link {
+  display: inline-block;
+  text-decoration: none;
+}
+.socials__link:not(:last-child) {
+  margin-right: 24px;
+}
+
+.socials__img {
+  fill: #FCB72B;
+  transition: all 0.2s ease;
+}
+.socials__img:hover {
+  fill: #E5ECF4;
 }/*# sourceMappingURL=style.css.map */

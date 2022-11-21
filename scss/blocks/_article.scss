@@ -1,0 +1,40 @@
+.site-article {
+    padding: 102px 0;
+    background-color: #495567;
+    background-image: url('../../images/article-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.site-article__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textbox-article {
+    width: 100%;
+    max-width: 415px;
+}
+
+.site-article__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFF;
+}
+
+.btnbox {
+    display: flex;
+}
+
+.btnbox__link {
+    display: inline-block;
+    text-decoration: none;
+
+    &:first-child {
+        margin-right: 18px;
+    }
+}
