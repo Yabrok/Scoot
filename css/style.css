@@ -692,6 +692,53 @@ img {
   padding: 14px 43px;
 }
 
+@media only screen and (max-width: 786px) {
+  .services {
+    padding: 0 0 104px;
+    background-image: url("../../images/services-bg_tablet.png"), url("../../images/services-bg_tablet2.png"), url("../../images/services-bg3.png");
+    background-repeat: no-repeat;
+    background-position: center top, calc(50% - 80px) calc(50% - 220px), calc(50% + 273px) calc(50% + 700px);
+  }
+  .services__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .seritem {
+    align-items: center;
+    justify-content: center;
+  }
+  .seritem:nth-child(2) {
+    justify-content: center;
+  }
+  .seritem:not(:last-child) {
+    margin-bottom: 150px;
+  }
+  .seritem__content {
+    padding: 470px 0 0;
+    width: 100%;
+    max-width: 573px;
+    text-align: center;
+  }
+  .seritem__title {
+    margin: 0 0 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .services {
+    padding: 0 0 120px;
+    background-image: url("../../images/services-bg_mobile.png");
+    background-repeat: no-repeat;
+    background-position: top calc(50% - 100px);
+  }
+  .seritem__content {
+    max-width: 311px;
+  }
+  .seritem__title {
+    margin: 0 0 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
 .site-article {
   padding: 102px 0;
   background-color: #495567;
@@ -732,6 +779,31 @@ img {
   margin-right: 18px;
 }
 
+@media only screen and (max-width: 786px) {
+  .site-article {
+    padding: 62px 0;
+    background-image: url("../../images/article-bg_tablet.jpg");
+    background-position: bottom center;
+  }
+  .site-article__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-article__title {
+    margin: 0 0 40px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .site-article {
+    padding: 88px 0;
+    background-image: url("../../images/article-bg_mobile.jpg");
+  }
+  .site-article__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
 .site-footer {
   padding: 35px 0;
   background-color: #333A44;
