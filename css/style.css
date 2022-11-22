@@ -642,9 +642,9 @@ img {
 }
 .services {
   padding: 0 0 370px;
-  background-image: url("../../images/services-bg3.png");
+  background-image: url("../../images/services-bg.png"), url("../../images/services-bg2.png"), url("../../images/services-bg3.png");
   background-repeat: no-repeat;
-  background-position: calc(50% + 530px) calc(50% + 450px);
+  background-position: calc(50% + 450px) top, calc(50% - 550px) calc(50% - 130px), calc(50% + 530px) calc(50% + 450px);
 }
 
 .services__list {
