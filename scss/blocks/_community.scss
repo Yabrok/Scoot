@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  list-style-type: none;
   margin-top: 103px;
 }
 
@@ -32,6 +33,7 @@
   width: 240px;
   height: 240px;
   background-image: url("../../images/join1.png");
+  background-position: center;
 }
 
 .community__item:nth-child(2)::before {
@@ -41,6 +43,7 @@
   width: 240px;
   height: 240px;
   background-image: url("../../images/join2.png");
+  background-position: center;
 }
 
 .community__item:nth-child(3)::before {
