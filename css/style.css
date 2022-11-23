@@ -640,7 +640,7 @@ img {
     text-align: center;
   }
 }
-.services .services {
+.services {
   padding: 0 0 370px;
   background-image: url("../../images/services-bg.png"), url("../../images/services-bg2.png"), url("../../images/services-bg3.png");
   background-repeat: no-repeat;
