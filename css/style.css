@@ -858,7 +858,7 @@ img {
   padding: 0 0 370px;
   background-image: url("../../images/services-small.png");
   background-repeat: no-repeat;
-  background-position: calc(50% + 530px) calc(50% - 55px);
+  background-position: calc(50% + 335px) calc(50% - 115px);
 }
 
 .services-small__list {
@@ -1374,6 +1374,10 @@ img {
 .site-footer__inner {
   display: flex;
   align-items: center;
+}
+
+.navbar-footer {
+  margin-left: 58px;
 }
 
 .socials {
