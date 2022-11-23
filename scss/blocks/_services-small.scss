@@ -1,0 +1,54 @@
+.services-small {
+  padding: 0 0 370px;
+  background-image:
+      url('../../images/services-small.png');
+  background-repeat: no-repeat;
+  background-position:
+      calc(50% + 530px) calc(50% + -55px);
+
+}
+
+.services-small__list {
+  @include unlist;
+}
+
+.seritem {
+  display: flex;
+  justify-content: flex-start;
+
+  &:nth-child(2) {
+      justify-content: flex-end;
+  }
+
+  &:not(:last-child) {
+      margin: 0 0 226px;
+  }
+}
+
+.seritem__content {
+  padding: 66px 0 0;
+  width: 100%;
+  max-width: 445px;
+}
+
+.seritem__title {
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.seritem__text {
+  margin: 0 0 40px;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.mainbtn-services-small {
+  padding: 14px 43px;
+}

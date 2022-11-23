@@ -1,0 +1,56 @@
+.location-img {
+  padding: 100px 0;
+  background-image: url("../../images/location-img.png");
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.location-img__title {
+  margin: 0;
+  display: none;
+}
+
+@media only screen and (max-width:30px) {
+
+  .location-img{
+    padding: 72px 0;
+    background-image: url('../../images/careers-hero_tablet.png');
+    background-repeat: no-repeat;
+  }
+
+  .location-img__title {
+    display: block;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width:660px){
+
+  .location-img{
+    padding: 55px;
+  }
+
+  .location-img__title {
+    display: block;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width:576px){
+  .location-img{
+    background-image: url('../../images/careers-hero_mobile.png');
+    background-repeat: no-repeat;
+  }
+
+  .location-img__title{
+    text-align: center;
+  }
+}
