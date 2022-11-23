@@ -12,7 +12,7 @@
   @include unlist;
 }
 
-.seritem {
+.seritem-main {
   display: flex;
   justify-content: flex-start;
 
@@ -25,13 +25,13 @@
   }
 }
 
-.seritem__content {
+.seritem-main__content {
   padding: 66px 0 0;
   width: 100%;
   max-width: 445px;
 }
 
-.seritem__title {
+.seritem-main__title {
   margin: 0 0 24px;
   font-weight: 700;
   font-size: 48px;
@@ -40,7 +40,7 @@
   color: #495567;
 }
 
-.seritem__text {
+.seritem-main__text {
   margin: 0 0 40px;
   font-family: 'Lexend Deca';
   font-weight: 400;
@@ -51,4 +51,68 @@
 
 .mainbtn-services-small {
   padding: 14px 43px;
+}
+
+
+@media only screen and(max-width:786px) {
+  .services-small {
+      padding: 0 0 104px;
+      background-image:
+          url('../../images/services-small.png');
+      background-repeat: no-repeat;
+      background-position:
+          center top;
+  }
+
+  .services-small__list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .seritem-main {
+      align-items: center;
+      justify-content: center;
+
+      &:nth-child(2) {
+          justify-content: center;
+      }
+
+      &:not(:last-child) {
+          margin-bottom: 150px;
+      }
+  }
+
+  .seritem-main__content {
+      padding: 470px 0 0;
+      width: 100%;
+      max-width: 573px;
+      text-align: center;
+  }
+
+  .seritem-main__title {
+      margin: 0 0 40px;
+  }
+}
+
+@media only screen and(max-width:576px) {
+  .services-small {
+      padding: 0 0 120px;
+      background-image:
+          url('../../images/services-small_mobile.png');
+      background-repeat: no-repeat;
+      background-position:
+          center top;
+  }
+
+  .seritem-main__content {
+      padding: 350px 0 0;
+      max-width: 311px;
+  }
+
+  .seritem-main__title {
+      margin: 0 0 32px;
+      font-size: 32px;
+      line-height: 32px;
+  }
+
 }
