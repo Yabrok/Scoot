@@ -1,17 +1,14 @@
 .services {
-    .services {
-        padding: 0 0 370px;
-        background-image:
-            url('../../images/services-bg.png'),
-            url('../../images/services-bg2.png'),
-            url('../../images/services-bg3.png');
-        background-repeat: no-repeat;
-        background-position:
-            calc(50% + 450px) top,
-            calc(50% - 550px) calc(50% - 130px),
-            calc(50% + 530px) calc(50% + 450px);
-    }
-
+    padding: 0 0 370px;
+    background-image:
+        url('../../images/services-bg.png'),
+        url('../../images/services-bg2.png'),
+        url('../../images/services-bg3.png');
+    background-repeat: no-repeat;
+    background-position:
+        calc(50% + 450px) top,
+        calc(50% - 550px) calc(50% - 130px),
+        calc(50% + 530px) calc(50% + 450px);
 }
 
 .services__list {
@@ -59,18 +56,19 @@
     padding: 14px 43px;
 }
 
+
 @media only screen and(max-width:786px) {
     .services {
         padding: 0 0 104px;
-        background-image: 
-        url('../../images/services-bg_tablet.png'), 
-        url('../../images/services-bg_tablet2.png'),
-        url('../../images/services-bg3.png');
+        background-image:
+            url('../../images/services-bg_tablet.png'),
+            url('../../images/services-bg_tablet2.png'),
+            url('../../images/services-bg3.png');
         background-repeat: no-repeat;
-        background-position: 
-        center top, 
-        calc(50% - 80px) calc(50% - 220px),
-        calc(50% + 273px) calc(50% + 700px);
+        background-position:
+            center top,
+            calc(50% - 80px) calc(50% - 220px),
+            calc(50% + 273px) calc(50% + 700px);
     }
 
     .services__list {
@@ -106,13 +104,20 @@
 @media only screen and(max-width:576px) {
     .services {
         padding: 0 0 120px;
-        background-image: url('../../images/services-bg_mobile.png');
+        background-image:
+            url('../../images/services-bg_mobile.png'),
+            url('../../images/services-bg_mobil2.png'),
+            url('../../images/services-bg_mobile3.png');
         background-repeat: no-repeat;
-        background-position: top calc(50% - 100px);
+        // background-position: top calc(50% + 100px);
+        background-position:
+            center top,
+            calc(50% - 15px) calc(50% - 255px),
+            calc(50% + 15px) calc(50% + 600px);
     }
 
-
     .seritem__content {
+        padding: 350px 0 0;
         max-width: 311px;
     }
 
